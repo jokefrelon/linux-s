@@ -15,3 +15,7 @@ openwrt相关的脚本，已过时，放弃维护。
 
 ## 3. [cputemp.sh](cputemp.sh)
 此脚本适用于Ubuntu系列用一句话命令来查看当前CPU温度
+
+## 4. [acme-sign.sh](acme-sign.sh)
+
+借助[acme.sh](https://github.com/acmesh-official/acme.sh)项目,自动给我的二级子域名签发证书
