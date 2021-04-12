@@ -17,5 +17,13 @@ openwrt相关的脚本，已过时，放弃维护。
 此脚本适用于Ubuntu系列用一句话命令来查看当前CPU温度
 
 ## 4. [acme-sign.sh](acme-sign.sh)
-
 借助[acme.sh](https://github.com/acmesh-official/acme.sh)项目,自动给我的二级子域名签发证书
+
+## 5. [directorylister](Dockerfile/directorylister/Dockerfile)
+
+这是一个Dockerfile用于快速构建docker版本的**directorylister**，在使用时你可以对端口进行映射，将容器内的8088端口映射到本地，这样你就可以通过局域网访问了。你也可以创建数据卷进行目录映射。例如：
+
+```
+docker run -id --name flubt -p 8088:8088 -v /home/lx/disk3/vm:/var/www/html/vm flubt bash -c 'bash /root/np.sh'
+```
+
