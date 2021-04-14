@@ -17,7 +17,7 @@ RUN sed -i 's/archive.ubuntu.com/mirrors.163.com/g' /etc/apt/sources.list \
         && rm /var/www/html/directory-lister.svg \
         && rm /var/www/html/LICENSE \
         && rm /var/www/html/DirectoryLister-3.7.7.zip \
-        && echo -e '# 隐私声明 \n\n这是一个私人文件List,如果你在未经本人许可的情况下访问了本页面,请立即关闭本页面!\n\n如若侵犯本人的个人隐私,本人保留追究相关法律责任的权 力' > /var/www/html/README.md \
+        && echo '# 隐私声明 \n\n这是一个私人文件List，如果你在未经本人许可的情况下访问了本页面，请立即关闭本页面！\n\n如若侵犯本人的个人隐私，本人保留追究相关法律责任的权力！' > /var/www/html/README.md \
         && service apache2 restart \
         && sed -i 's/# First attempt to serve request as file, then/proxy_pass http:\/\/localhost\/;/g' /etc/nginx/sites-enabled/default \
         && chmod  -R 777 /var/www/html \
