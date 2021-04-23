@@ -39,6 +39,3 @@ docker run -id --name flubt -p 8088:8088 -v /home/lx/disk3/vm:/var/www/html/vm f
 ```
 sudo apt install ffmpeg
 ```
-
-我只是把我遇到的常见几种格式写进去了，如果脚本在你那里不能正常运行你可以多写几个`if else`判断一下。
-
