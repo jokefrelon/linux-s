@@ -1,6 +1,6 @@
 # Linux 脚本合集
 这个仓库是我用来存放我平时写的一些小脚本
-## 1. [netspeed.sh](netspeed.sh)
+## 1. [netspeed.sh](script/netspeed.sh)
 简介：netspeed.sh是一个轻量且快速的查看当前网卡实时网速的脚本(Ubuntu 18~20适用)
 由于不支持参数，所以默认查看的是你物理网卡的当前网速
 注：脚本依赖于ifconfig命令，Ubuntu现在默认没有安装该命令，需要手动安装一下
@@ -13,10 +13,10 @@ sudo apt install net-tools
 ## 2. [Openwrt](Openwrt.md)
 openwrt相关的脚本，已过时，放弃维护。
 
-## 3. [cputemp.sh](cputemp.sh)
+## 3. [cputemp.sh](script/cputemp.sh)
 此脚本适用于Ubuntu系列用一句话命令来查看当前CPU温度
 
-## 4. [acme-sign.sh](acme-sign.sh)
+## 4. [acme-sign.sh](script/acme-sign.sh)
 
 借助[acme.sh](https://github.com/acmesh-official/acme.sh)项目,自动给我的二级子域名签发证书
 
@@ -28,7 +28,7 @@ openwrt相关的脚本，已过时，放弃维护。
 docker run -id --name flubt -p 8088:8088 -v /home/lx/disk3/vm:/var/www/html/vm flubt bash -c 'bash /root/np.sh'
 ```
 
-## 6.[videoinfo.sh](videoinfo.sh)
+## 6.[videoinfo.sh](script/videoinfo.sh)
 
 这是一个快速查看当前目录下MP4格式视频信息的命令,可以格式化输出以下信息:
 
