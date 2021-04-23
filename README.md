@@ -17,6 +17,7 @@ openwrt相关的脚本，已过时，放弃维护。
 此脚本适用于Ubuntu系列用一句话命令来查看当前CPU温度
 
 ## 4. [acme-sign.sh](acme-sign.sh)
+
 借助[acme.sh](https://github.com/acmesh-official/acme.sh)项目,自动给我的二级子域名签发证书
 
 ## 5. [directorylister](Dockerfile/directorylister/Dockerfile)
@@ -26,4 +27,18 @@ openwrt相关的脚本，已过时，放弃维护。
 ```
 docker run -id --name flubt -p 8088:8088 -v /home/lx/disk3/vm:/var/www/html/vm flubt bash -c 'bash /root/np.sh'
 ```
+
+## 6.[videoinfo.sh](videoinfo.sh)
+
+这是一个快速查看当前目录下MP4格式视频信息的命令,可以格式化输出以下信息:
+
+`文件名	文件大小	视频时长	视频分辨率	视频码率`
+
+其中文件名最长可以显示32个字符,可以根据自己的需求更改，该脚本依赖于`ffmpeg`命令，如果没有**ffmpeg**可以执行下面命令安装一下。
+
+```
+sudo apt install ffmpeg
+```
+
+我只是把我遇到的常见几种格式写进去了，如果脚本在你那里不能正常运行你可以多写几个`if else`判断一下。
 
